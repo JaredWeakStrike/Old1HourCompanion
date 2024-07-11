@@ -1,0 +1,348 @@
+title: 0.8 Epic 1 Hour Companion
+originalAuthor: Shananas, Num, Kayya, Jared, DA
+game: kh2
+description: PUT ABOVE SEED This 1 hour modpack serves to make installing all the required mods for 1 hour easy. The mods are as follows Nums Better Bos Scaling, Kayya's Remove OC Pete Timer shananas' boss rando movement fix SonicShadowSilver2's Cutscene skipper and Some GOA edits done by Jaredweakstrike and DA
+assets:
+#Lua Scripts
+- name: scripts/F266B00B GoA ROM.lua
+  method: copy
+  source:
+  - name: scripts/F266B00B GoA ROM.lua
+- name: scripts/OCPeteNoTimer.lua
+  method: copy
+  source:
+  - name: scripts/OCPete.lua
+- name: scripts/2fmRemoveSwarm.lua
+  method: copy
+  source:
+  - name: scripts/2fmRemoveSwarm.lua
+#- name: scripts/CutsceneSkipper.lua
+#  method: copy
+#  source:
+#  - name: scripts/CutsceneSkipper.lua
+#Better Boss Scaling
+- name: 00battle.bin
+  method: binarc
+  source:
+  - name: enmp #Halve MCP's HP & Remove Terra and Datas' Fixed Levels
+    type: list
+    method: copy
+    source:
+    - name: Enmp.bin
+- name: ard/he03.ard
+  multi:
+  - name: ard/us/he03.ard
+  - name: ard/fr/he03.ard
+  - name: ard/gr/he03.ard
+  - name: ard/it/he03.ard
+  - name: ard/sp/he03.ard
+  method: binarc
+  source:
+  - name: btl
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/he03/btl.script
+- name: ard/he05.ard
+  multi:
+  - name: ard/us/he05.ard
+  - name: ard/fr/he05.ard
+  - name: ard/gr/he05.ard
+  - name: ard/it/he05.ard
+  - name: ard/sp/he05.ard
+  method: binarc
+  source:
+  - name: btl
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/he05/btl.script
+- name: ard/he06.ard
+  multi:
+  - name: ard/us/he06.ard
+  - name: ard/fr/he06.ard
+  - name: ard/gr/he06.ard
+  - name: ard/it/he06.ard
+  - name: ard/sp/he06.ard
+  method: binarc
+  source:
+  - name: btl
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/he06/btl.script
+- name: ard/he07.ard
+  multi:
+  - name: ard/us/he07.ard
+  - name: ard/fr/he07.ard
+  - name: ard/gr/he07.ard
+  - name: ard/it/he07.ard
+  - name: ard/sp/he07.ard
+  method: binarc
+  source:
+  - name: btl
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/he07/btl.script
+- name: ard/he10.ard
+  multi:
+  - name: ard/us/he10.ard
+  - name: ard/fr/he10.ard
+  - name: ard/gr/he10.ard
+  - name: ard/it/he10.ard
+  - name: ard/sp/he10.ard
+  method: binarc
+  source:
+  - name: btl
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/he10/btl.script
+- name: ard/he11.ard
+  multi:
+  - name: ard/us/he11.ard
+  - name: ard/fr/he11.ard
+  - name: ard/gr/he11.ard
+  - name: ard/it/he11.ard
+  - name: ard/sp/he11.ard
+  method: binarc
+  source:
+  - name: btl
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/he11/btl.script
+- name: ard/he15.ard
+  multi:
+  - name: ard/us/he15.ard
+  - name: ard/fr/he15.ard
+  - name: ard/gr/he15.ard
+  - name: ard/it/he15.ard
+  - name: ard/sp/he15.ard
+  method: binarc
+  source:
+  - name: btl
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/he15/btl.script
+- name: ard/he16.ard
+  multi:
+  - name: ard/us/he16.ard
+  - name: ard/fr/he16.ard
+  - name: ard/gr/he16.ard
+  - name: ard/it/he16.ard
+  - name: ard/sp/he16.ard
+  method: binarc
+  source:
+  - name: btl
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/he16/btl.script
+- name: ard/he17.ard
+  multi:
+  - name: ard/us/he17.ard
+  - name: ard/fr/he17.ard
+  - name: ard/gr/he17.ard
+  - name: ard/it/he17.ard
+  - name: ard/sp/he17.ard
+  method: binarc
+  source:
+  - name: btl
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/he17/btl.script
+#Remove OC Pete timer
+- name: remastered/msn/us/HE08_MS107.bar/US_HE08_MS107_bar0.png
+  multi:
+  - name: remastered/msn/fr/HE08_MS107.bar/US_HE08_MS107_bar0.png
+  - name: remastered/msn/gr/HE08_MS107.bar/US_HE08_MS107_bar0.png
+  - name: remastered/msn/it/HE08_MS107.bar/US_HE08_MS107_bar0.png
+  - name: remastered/msn/sp/HE08_MS107.bar/US_HE08_MS107_bar0.png
+  - name: remastered/msn/us/HE08_MS107.bar/US_HE08_MS107_bar0.png
+  method: copy
+  source:
+  - name: remastered/msn/us/HE08_MS107.bar/US_HE08_MS107_bar0.png
+
+#Completion Mark Icon
+- name: remastered/itempic/item-226.imd/-0.dds
+  multi:
+  - name: remastered/itempic/item-226.imd/-0.dds
+  - name: remastered/itempic/item-226.imd/-0.dds
+  - name: remastered/itempic/item-226.imd/-0.dds
+  - name: remastered/itempic/item-226.imd/-0.dds
+  - name: remastered/itempic/item-226.imd/-0.dds
+  method: copy
+  source:
+  - name: remastered/itempic/item-226.imd/-0.dds
+# Comletion Mark Description  
+- name: msg/us/sys.bar
+  multi:
+  - name: msg/fr/sys.bar
+  - name: msg/gr/sys.bar
+  - name: msg/it/sys.bar
+  - name: msg/sp/sys.bar
+  method: binarc
+  source:
+  - name: sys
+    type: list
+    method: kh2msg
+    source:
+    - name: msg/sys.yml
+      language: en
+#PR Barrel RC
+- name: obj/F_CA050.mset
+  method: copy
+  source:
+  - name: obj/F_CA050.mset
+
+#Good Oogie
+- name: obj/B_NM000.mdlx
+  method: copy
+  source:
+  - name: obj/B_NM000.mdlx
+
+# cor orb in pooh
+- name: ard/po00.ard #The Hundred Acre Wood (GoA Warp)
+  multi:
+  - name: ard/us/po00.ard
+  - name: ard/fr/po00.ard
+  - name: ard/gr/po00.ard
+  - name: ard/it/po00.ard
+  - name: ard/sp/po00.ard
+  method: binarc
+  source:
+  - name: m_20 #Combine Computer Spawns (Party)
+    type: areadataspawn
+    method: spawnpoint
+    source:
+    - name: m_20.yml
+- name: ard/bb05.ard #Ballroom (Party Menu after Shadow Stalker)
+  multi:
+  - name: ard/jp/bb05.ard
+  - name: ard/us/bb05.ard
+  - name: ard/fr/bb05.ard
+  - name: ard/gr/bb05.ard
+  - name: ard/it/bb05.ard
+  - name: ard/sp/bb05.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/bb05/evt.script
+- name: ard/hb26.ard #Garden of Assemblage (Various Stuff)
+  multi:
+  - name: ard/jp/hb26.ard
+  - name: ard/us/hb26.ard
+  - name: ard/fr/hb26.ard
+  - name: ard/gr/hb26.ard
+  - name: ard/it/hb26.ard
+  - name: ard/sp/hb26.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/hb26/evt.script  
+#- name: remastered/field2d/us/al0field.2dd/US_al0field_2dd2.png
+#  platform: pc
+#  method: copy
+#  source:
+#  - name: remastered/transition.png
+#- name: remastered/field2d/us/bb0field.2dd/US_bb0field_2dd2.png
+#  platform: pc
+#  method: copy
+#  source:
+#  - name: remastered/transition.png
+#- name: remastered/field2d/us/ca0field.2dd/US_ca0field_2dd2.png
+#  platform: pc
+#  method: copy
+#  source:
+#  - name: remastered/transition.png
+#- name: remastered/field2d/us/dc0field.2dd/US_dc0field_2dd2.png
+#  platform: pc
+#  method: copy
+#  source:
+#  - name: remastered/transition.png
+#- name: remastered/field2d/us/di0field.2dd/US_di0field_2dd2.png
+#  platform: pc
+#  method: copy
+#  source:
+#  - name: remastered/transition.png
+#- name: remastered/field2d/us/eh0field.2dd/US_eh0field_2dd2.png
+#  platform: pc
+#  method: copy
+#  source:
+#  - name: remastered/transition.png
+#- name: remastered/field2d/us/es0field.2dd/US_es0field_2dd2.png
+#  platform: pc
+#  method: copy
+#  source:
+#  - name: remastered/transition.png
+#- name: remastered/field2d/us/hb0field.2dd/US_hb0field_2dd2.png
+#  platform: pc
+#  method: copy
+#  source:
+#  - name: remastered/transition.png
+#- name: remastered/field2d/us/he0field.2dd/US_he0field_2dd2.png
+#  platform: pc
+#  method: copy
+#  source:
+#  - name: remastered/transition.png
+#- name: remastered/field2d/us/lk0field.2dd/US_lk0field_2dd2.png
+#  platform: pc
+#  method: copy
+#  source:
+#  - name: remastered/transition.png
+#- name: remastered/field2d/us/lm0field.2dd/US_lm0field_2dd2.png
+#  platform: pc
+#  method: copy
+#  source:
+#  - name: remastered/transition.png
+#- name: remastered/field2d/us/mu0field.2dd/US_mu0field_2dd2.png
+#  platform: pc
+#  method: copy
+#  source:
+#  - name: remastered/transition.png
+#- name: remastered/field2d/us/nm0field.2dd/US_nm0field_2dd2.png
+#  platform: pc
+#  method: copy
+#  source:
+#  - name: remastered/transition.png
+#- name: remastered/field2d/us/po0field.2dd/US_po0field_2dd2.png
+#  platform: pc
+#  method: copy
+#  source:
+#  - name: remastered/transition.png
+#- name: remastered/field2d/us/tr0field.2dd/US_tr0field_2dd2.png
+#  platform: pc
+#  method: copy
+#  source:
+#  - name: remastered/transition.png
+#- name: remastered/field2d/us/tt0field.2dd/US_tt0field_2dd2.png
+#  platform: pc
+#  method: copy
+#  source:
+#  - name: remastered/transition.png
+#- name: remastered/field2d/us/wi0field.2dd/US_wi0field_2dd2.png
+#  platform: pc
+#  method: copy
+#  source:
+#  - name: remastered/transition.png
+#- name: remastered/field2d/us/wm0field.2dd/US_wm0field_2dd2.png
+#  platform: pc
+#  method: copy
+#  source:
+#  - name: remastered/transition.png
+#- name: remastered/field2d/us/zz0field.2dd/US_zz0field_2dd2.png
+#  platform: pc
+#  method: copy
+#  source:
+#  - name: remastered/transition.png
+#
